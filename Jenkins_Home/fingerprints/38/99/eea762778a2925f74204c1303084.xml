@@ -1,0 +1,14 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<fingerprint>
+  <timestamp>2020-04-04 11:24:08.506 UTC</timestamp>
+  <md5sum>3899eea762778a2925f74204c1303084</md5sum>
+  <fileName>Credential id=b4e5875e-1793-405a-aaec-dd886e02e90c name=deployer/******</fileName>
+  <usages/>
+  <facets>
+    <com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet plugin="credentials@2.3.5">
+      <timestamp>1586001996501</timestamp>
+      <itemFullName>Automated_Deployment_Test</itemFullName>
+      <timestamp0>1586000412084</timestamp0>
+    </com.cloudbees.plugins.credentials.fingerprints.ItemCredentialsFingerprintFacet>
+  </facets>
+</fingerprint>

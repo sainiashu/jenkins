@@ -1,0 +1,17 @@
+Started by upstream project "[8mha:////4P/ToJyAVgSJJoxhQi4eUlb3BCJUghtCl4c3DpmCI5y8AAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgZx/az8JP3gxNyCnNR4l9SCnPzKeC+gCAC0Hr2QzAAAAA==[0mSample_Deploy_Job" build number [8mha:////4Oi4cMnV2eZmQfMKtM7EN5wk8H6N+l0/jRyIQsa0kFhKAAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBgn9rPwk/eDE3IKc1HiX1IKc/Mp4L6CIMQDf+kpYzQAAAA==[0m3
+originally caused by:
+ Started by upstream project "[8mha:////4Fwn+UYKFCNyLdMV+5NyEnOz1m9SSqjsMKBJDBlxsI7iAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgYx/az8JP3gxNyCnNR4p9LMnJR4L6AAANJL6XPLAAAA[0mSample_Build_Job" build number [8mha:////4DLO+za0VnAsomDOhDpE+vlOW8Gaoj6tXSgK4gd1ogFPAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBnH9rPwk/eDE3IKc1Hin0syclHgvoIAxABsBobTMAAAA[0m3
+ originally caused by:
+  Started by user [8mha:////4F873CvHtVHcb59IjJFWZnBsEdneUb7q+gKqfLgWNuzZAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building on master in workspace E:\Jenkins\Jenkins_Home\workspace\Sample_Test_Job
+[Sample_Test_Job] $ cmd /c call C:\Users\ashusai\AppData\Local\Temp\jenkins8088318236761666180.bat
+
+E:\Jenkins\Jenkins_Home\workspace\Sample_Test_Job>time /t 
+05:38 PM
+
+E:\Jenkins\Jenkins_Home\workspace\Sample_Test_Job>echo "Sample test job completed successfully." 
+"Sample test job completed successfully."
+
+E:\Jenkins\Jenkins_Home\workspace\Sample_Test_Job>exit 0 
+Finished: SUCCESS

@@ -1,0 +1,24 @@
+Started by user [8mha:////4F873CvHtVHcb59IjJFWZnBsEdneUb7q+gKqfLgWNuzZAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building on master in workspace E:\Jenkins\Jenkins_Home\workspace\Robot_Test1
+[Robot_Test1] $ cmd /c call C:\Users\ashusai\AppData\Local\Temp\jenkins4110956126150378914.bat
+
+E:\Jenkins\Jenkins_Home\workspace\Robot_Test1>cd E:\Jenkins\RobotProject 
+
+E:\Jenkins\RobotProject>robot Test1.robot 
+[ ERROR ] Error in file 'E:\Jenkins\RobotProject\Test1.robot': Non-existing setting 'import os'.
+==============================================================================
+Test1                                                                         
+==============================================================================
+Test 1 Parallel Execution                                             | PASS |
+------------------------------------------------------------------------------
+Test1                                                                 | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Output:  E:\Jenkins\RobotProject\output.xml
+Log:     E:\Jenkins\RobotProject\log.html
+Report:  E:\Jenkins\RobotProject\report.html
+
+E:\Jenkins\RobotProject>exit 0 
+Finished: SUCCESS

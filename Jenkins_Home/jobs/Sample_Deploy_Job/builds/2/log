@@ -1,0 +1,16 @@
+Started by upstream project "[8mha:////4Fwn+UYKFCNyLdMV+5NyEnOz1m9SSqjsMKBJDBlxsI7iAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAyBEgYx/az8JP3gxNyCnNR4p9LMnJR4L6AAANJL6XPLAAAA[0mSample_Build_Job" build number [8mha:////4FgbihAOhwfStkEkIMvCROyFxjogcc3Q2d72clEbrflqAAAAoR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBnH9rPwk/eDE3IKc1Hin0syclHgvoIARAI0xpsPMAAAA[0m2
+originally caused by:
+ Started by user [8mha:////4F873CvHtVHcb59IjJFWZnBsEdneUb7q+gKqfLgWNuzZAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building on master in workspace E:\Jenkins\Jenkins_Home\workspace\Sample_Deploy_Job
+[Sample_Deploy_Job] $ cmd /c call C:\Users\ashusai\AppData\Local\Temp\jenkins1528954105747486984.bat
+
+E:\Jenkins\Jenkins_Home\workspace\Sample_Deploy_Job>time /t 
+05:19 PM
+
+E:\Jenkins\Jenkins_Home\workspace\Sample_Deploy_Job>echo "Sample Deploy job completed successfully." 
+"Sample Deploy job completed successfully."
+
+E:\Jenkins\Jenkins_Home\workspace\Sample_Deploy_Job>exit 0 
+Triggering a new build of [8mha:////4OkXKw0h63So6tFNA175z6+GchfqZI7wEe7mAcNZSeODAAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz+EgZR/az8JP3gxNyCnNT4kNTikngvIB8ASGQ6BMoAAAA=[0mSample_Test_Job
+Finished: SUCCESS

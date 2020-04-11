@@ -1,0 +1,11 @@
+Started by user [8mha:////4F873CvHtVHcb59IjJFWZnBsEdneUb7q+gKqfLgWNuzZAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building on master in workspace E:\Jenkins\Jenkins_Home\workspace\Job_creation
+[Job_creation] $ cmd /c call C:\Users\ashusai\AppData\Local\Temp\jenkins2182584358124452404.bat
+
+E:\Jenkins\Jenkins_Home\workspace\Job_creation>29-Mar-20-16:18:20.33
+The filename, directory name, or volume label syntax is incorrect.
+
+E:\Jenkins\Jenkins_Home\workspace\Job_creation>exit 123 
+Build step 'Execute Windows batch command' marked build as failure
+Finished: FAILURE

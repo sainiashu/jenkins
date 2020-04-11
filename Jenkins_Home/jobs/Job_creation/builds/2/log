@@ -1,0 +1,11 @@
+Started by timer
+Running as SYSTEM
+Building on master in workspace E:\Jenkins\Jenkins_Home\workspace\Job_creation
+[Job_creation] $ cmd /c call C:\Users\ashusai\AppData\Local\Temp\jenkins969285024363954453.bat
+
+E:\Jenkins\Jenkins_Home\workspace\Job_creation>date
+The current date is: 29-Mar-20 
+Enter the new date: (dd-mm-yy) 
+E:\Jenkins\Jenkins_Home\workspace\Job_creation>exit 1 
+Build step 'Execute Windows batch command' marked build as failure
+Finished: FAILURE

@@ -1,0 +1,10 @@
+Started by remote host 0:0:0:0:0:0:0:1
+Running as SYSTEM
+Building on master in workspace E:\Jenkins\Jenkins_Home\workspace\Job_creation
+[Job_creation] $ cmd /c call C:\Users\ashusai\AppData\Local\Temp\jenkins1546647469596317713.bat
+
+E:\Jenkins\Jenkins_Home\workspace\Job_creation>time /t 
+04:29 PM
+
+E:\Jenkins\Jenkins_Home\workspace\Job_creation>exit 0 
+Finished: SUCCESS

@@ -1,0 +1,11 @@
+Started from command line by [8mha:////4Bjs25dd5DFSAaQEevMKDnwwoFo9blFkjQJYSoWhw0hnAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZ+/dLi1CL9xLz8vMrc/NJiAJjzDjjEAAAA[0manonymous
+Running as SYSTEM
+Building on master in workspace E:\Jenkins\Jenkins_Home\workspace\Job_creation
+[Job_creation] $ cmd /c call C:\Users\ashusai\AppData\Local\Temp\jenkins870901968537016812.bat
+
+E:\Jenkins\Jenkins_Home\workspace\Job_creation>time /t 
+12:49 PM
+
+E:\Jenkins\Jenkins_Home\workspace\Job_creation>exit 0 
+Triggering a new build of [8mha:////4FVO9WNXUrZSPWc5jAxrxTKkSBghoiWQb2XH6y/1hsZbAAAApR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzhEgZJ/az8JP3kjMTMvPjUitTk+IKi/KzU5BJDfQDDia/bzgAAAA==[0mchain_exec_project1
+Finished: SUCCESS

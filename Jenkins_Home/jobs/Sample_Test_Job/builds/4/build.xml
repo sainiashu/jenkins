@@ -1,0 +1,41 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UpstreamCause>
+            <upstreamProject>Sample_Deploy_Job</upstreamProject>
+            <upstreamUrl>job/Sample_Deploy_Job/</upstreamUrl>
+            <upstreamBuild>4</upstreamBuild>
+            <upstreamCauses>
+              <hudson.model.Cause_-UpstreamCause>
+                <upstreamProject>Sample_Build_Job</upstreamProject>
+                <upstreamUrl>job/Sample_Build_Job/</upstreamUrl>
+                <upstreamBuild>4</upstreamBuild>
+                <upstreamCauses>
+                  <hudson.model.Cause_-UserIdCause>
+                    <userId>admin</userId>
+                  </hudson.model.Cause_-UserIdCause>
+                </upstreamCauses>
+              </hudson.model.Cause_-UpstreamCause>
+            </upstreamCauses>
+          </hudson.model.Cause_-UpstreamCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+  </actions>
+  <queueId>19</queueId>
+  <timestamp>1586091881119</timestamp>
+  <startTime>1586091881218</startTime>
+  <result>SUCCESS</result>
+  <duration>439</duration>
+  <charset>windows-1252</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>E:\Jenkins\Jenkins_Home\workspace\Sample_Test_Job</workspace>
+  <hudsonVersion>2.222.1</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

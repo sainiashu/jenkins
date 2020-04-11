@@ -1,0 +1,355 @@
+Learning: https://www.youtube.com/watch?v=Fi9pgrMlQZY&list=PLhW3qG5bs-L_ZCOA4zNPSoGbnVQ-rp_dG&index=2 (Automation step by step)
+1. Start Jenkins
+java -jar jenkins.war
+# Default port: 8080
+
+2. Jenkins Tomcat(Servlet container)
+# We can install all the application on one single server(Tomcat). 
+http://tomcat.apache.org/download-90.cgi
+#Download and unzip file
+Install version 8
+
+3. Java 7 or above(Download java)
+# Add env. variable:  JAVA_HOME OR JRE_HOME
+
+4. Copy and place the jenkins.war to Tomcat/webapps/
+5. Start tomcat
+# Go to cmd prompt and run:  E:\Tomcat\bin\startup.bat to 
+# Shutdown Tomcat: startup.bat
+
+6. Verify tomcat is working
+#default port: localhost:8080
+
+7. Verify jenkins 
+# localhost:8080/jenkins
+
+8. how to start standalone jnekins in different port
+# java -jar jenkins.war --httpPort=9090
+
+8.1 Verify with job creations on both the port 9090 and 8080
+
+====================Tutorial 3==========
+How to change home directory: default install in user profile: C:\Users\ashusai\.jenkins
+Why?
+1. This default directory store everything related to jenkins such logs, plugin and jos. Due less space in c:/ 
+2.  Project need
+
+1. How to check your home dir.
+#start your jenkins and click on manage jenkins. Click on configure system
+
+2. Create a new folder where you jenkins.war file is located:
+# In my case E:\Jenkins\newfolder(Jenkins_Home)
+
+3. Copy all from user profile [C:\Users\ashusai\.jenkins\] and paste into new location(E:\Jenkins\Jenkins_Home)
+
+4. Change env. variable JENKINS_HOME and set to new dir
+windows - change env variable, if JENKINS_HOME is not available in system env. variable list then add new JENKINS_HOME and value is E:\Jenkins\Jenkins_Home
+
+
+========= T=4== 
+How to use CLI
+Why
+1. Easier
+2. faster
+3. memory management
+4. Continuous Integration
+
+=====Step 1:====
+1. go to manage jenkins
+2. Click on configure global security
+# enable security is missing in my version
+
+3. Go to http://localhost:8080/click
+
+4.  Download jenkins-cli.jar place at any location
+5. Test the jenkins cmd line is working [NOT WORKING PLEASE VERIFY]
+verify safe-restart cmd
+======T-5=======
+how to create users + manage + assign roles
+-- How to create new users
+1. Click on Manage Jenkins-> click on manage users
+2. Click on create user
+
+-- How to configure users
+1. Click on User menu dropdown on top right hand side 
+2. Click on configure and you can modify accordingly.
+
+-- How to create and manage new roles
+1. go to browser and search Role strategy plugin for jenkins
+or
+
+Role-based Authorization Strategy in Install Available plugin section
+
+restart after installed
+
+4.[By Admin User] Manage Jenkins -> configure global security-> Authorization-> Checked Role Based Strategy
+
+-- How to assign users to roles
+-- How to control user access on projects
+
+======T-6 Basic Configuratons======
+1. Manage Jenkins -> Configuratons system
+
+#If you want to display on jenkins system enter text on "System Message text box"
+If your text is not visible as html format then go to manage jenkins- configure global security -> Markup Formatter select Safe HTML
+
+
+#Manage jenkins- configuration 
+2. NO of executors: set number of jobs execute using jenkins
+
+3. Add node: manage jenkins -> Manage nodes and clouds ->new node-
+# In general section select "Restrict where this project can be run" type t
+#he label expression in the text box
+
+4. Quiet period: wait between the job getting triggered into the source code repo.
+#note: Provide gap period time after commit
+ 
+5. Poll SCM/SCM checkout retry count: It will connect to the repo. to get the latest information. If it ffailes what it the max. retry count our jenkins do
+
+6. Restrict project naming: specify project name patterns in Jenkins
+
+7. Global properties:
+--Environment variables: Add variable for parameters Name and Value text box 
+use globally like ${key1}
+
+8. Jenkins URL: u can use ip address instead of localhost
+
+
+=====T-7- Gettng started with JOBS====
+1. create new item
+Build Trigger-> 
+	Build Periodically:- Use date time format.
+	Trigger builds remotely: triggered by outside jenkins
+	1. Check Trigger builds remotely radio button create any token(1234) for user copy the url below 
+	Trigger builds remotely
+	localhost:8080/job/Job_creation/build?token=1234
+	
+how to run chain job executions	:
+Create 2 or 3 test project free style project
+for example:
+Job_creation
+chain_exec_project1
+chain_exec_project2
+	
+Open chain_exec_project1 -> configure -> Under Build Triggers-> select Build after other projects are built and enter the project name to check: "Job_creation"
+
+======T-8 Jenkins Integration with Git(SCM)==
+Step 1: Create a robot test
+
+Step 2: Create jenkins job to run the robot test
+
+Step 3: Add project to GIT and GITHUB
+********** Git integration need to learn *************
+
+
+======T-9 Jenkins Integration with catalight==
+Install catlight: https://catlight.io/
+
+Support: http://support.catlight.io/
+
+Blog: https://blog.catlight.io/
+
+======T-9 JHow to do Automated Deployment==
+Run your jenkins in new port
+# java -jar jenkins.war --httpPort=9090
+NOTE: JENKINS AND TOMCAT RUNS ON DIFFERENT PORT IF BOTH ARE INSTALL IN SAME MACHIINE
+
+1. Deploy Jenkins: https://plugins.jenkins.io/deploy/
+ or
+ 
+ Install plugin using manage plugin search: "Deploy to container" and install
+ 
+2.  Creat new job "Automated deployment test"
+3. Demo purpose install search on google "sample war file download"
+4. Go to this link: https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/ and install sample war file "sample.war"
+5. Add post-build action deploy war/ear to container (add value to the fieldss)
+6. Add build step-> Select execute windows batch command and pass the below command
+	for example:
+	cd E:\Jenkins\RobotProject
+	robot Test1.robot
+7.Go to Post-build actions: select deploy war/eear to a container and enter this string "**/*.war"
+8. Context field value is : sample.war (file name)
+9. Paste sample war file in your workplace: E:\Jenkins\Jenkins_Home\workspace\Automated_Deployment_Test(Job name)
+10. Go to the tomcat-users.xml (my location: E:\Tomcat\conf\tomcat-users.xml)
+11. Update file with the below line, if it is not there.
+<user username="deployer" password="deployer" roles="manager-script"/>	
+
+12. Run Tomcat: go to tomcat dir: E:\Tomcat\bin->run startup.bat
+13. add tomcat container details in Automated_Deployment_Test job
+14. If you do not see username and password field then click on Add button which will navigate to Jenkins Credentials Provider: Jenkins dialog. Enter the user name and pwd which you have entered in your tomcat-users.xml
+My case:
+username: deployer, password:deployer
+
+15. Run and validate your deployment job: Automated_Deployment_Test: verify with url: http://localhost:8080/sample/
+sample.war file placed after job execution location: E:\Tomcat\webapps\sample.war
+
+16. Tomcat 8 also works with Tomcat 7.x selection from jenkins job cconfiguration side .
+
+======T-12 How to send email notification using jenkins==
+go to  manage jenkins-> configure system
+
+1.  Go to the email notification
+2. SMTP server: smtp.gmail.com
+3. Click on Advance button
+4. select Use smtp authentication
+5. username: saini.ashu
+6.  password:*********
+7. Use SSL incase of gmail checked the check box
+8. smtp port: commonly used: 465/ 587/ 25
+9. Test configuration by sending test e-mail checked box
+
+EMAIL NOTIFICATION NEED TO BE STUDY
+
+======T-14 How to setup DELIVERY PIPELINE in Jenkins (Step by Step)==
+1. create few jobs such as sample build job
+-- Sample Build Job
+-- Sample Deploy Job
+-- Sample Test Job
+
+2. Now, chained all the sample jobs
+2.1 Go to sample Deploy Job got configure and under Build Triggers section checked "Build after other projects are built". Also enter the chained job:Sample Build Job
+2.2 Go to Sample test Job got configure and under Build Triggers section checked "Build after other projects are built". Also enter the chained job:Sample Deploy Job
+
+3. execute Sample Build Job and you can see the trigger jobs run.
+
+4. Now, install "Delivery Jenkins Pipeline plugin" (google  or direct from the manage plugin section)
+5. After installation, go to the dash board and click on + button. Enter name Test Delivery pipeline and select checked box delivery pipeline view and click Ok.
+6. user navigate to test delivery configure scetion for the time being only go to the components section and click Add button. Enter name "Build Job" and select "Sample Build Job" from initial job drop down. Click save.  After that you can see the complete view.
+CLICK ON EDIT VIEW BUTTON
+7. Also click on view fullscreen and you can see the radiator/full view
+8. Under view setting this option "Number of pipeline instances per pipeline" provide the options to display the number of jobs on full screen.
+9. View settings:-  select this "Enable start of new pipeline build" check box offer you to trigger build from test delivery job
+10. View settings:-  select this "Enable rebuild" check box provide option to run any build without trigger the whole pipeline
+
+
+======T-15 How to setup BUILD PIPELINE in Jenkins ==
+1.  install Build Pipeline plugin from manage plugins section
+2. Go to dashboard click on + and create build pipeline view
+3. Select intial job from dropdown "Sample_Build_Job" under the Pipeline flow: layout and click and save.
+4. Click on configure button and  select "No Of Displayed Builds" option to display the more builds under display options.
+5. If you do not  see the any content after click on console button the click on configure button and select "new window" in console output link style
+
+======T-16 What is BLUE OCEAN (How to get started) ==
+1. install blue ocean plugin from manage plugins 
+2.  Switch to blue ocean view
+3.  After installation plugin you can see the link on the top middle button""
+4.  Blue Ocean is available if your jenkins version is 2.7 or above
+
+======T-17 How to Trigger Job with Email | Poll Mailbox Trigger Plugin ==
+1. Install "Poll Mailbox Trigger Plugin" for trigger job with email
+2. Create new item and 
+
+NEED TO CREATE GMAIL ACCOUNT FOR THIS SESSION
+https://www.youtube.com/watch?v=DWlAQe57uz8&list=PLhW3qG5bs-L_ZCOA4zNPSoGbnVQ-rp_dG&index=18
+SKIP FOR THE TIME BEING
+ 
+
+ ======T-18 How to create Build Monitor View ==
+1. Install Build Monitor view plugins  
+2. Create new item : "Build Monitor1"
+3.  Go to configure select the required jobs check boxes to show the information under Job Filters
+4. Select Order by "Status " from the dropdown under Build Monitor - View Settings section
+
+
+============How to install Jenkins on Amazon AWS EC2 Linux============ 
+
+============T- 19 How to add parameters in the job============ 
+1. Start Jenkins
+2. Create free style job/Job_creation/build
+3. Parameterize the job
+Syntax for windows:
+	%parametername%
+Other operating system:
+*nux/mac:
+	$parametername
+	${parametername}
+	"${parametername}"
+	
+4. Under General Tab Select "This project is parameterized"	 Select the type of the parameter you want. In  my case use "string parameter"
+	for eg: name= name
+		default value = Automation
+		description is optional
+		
+5. 	Go to the Build section and select the "Execute windows batch command"	
+6. Click save
+7. Now you can observe the instead of "Build" we have "Build with Parameter"
+8. when you click on Build with Parameter buton you can see the default value is "Automation" or you can modify it.
+
+=> Now check with other parameters options:
+Choice Parameter:	
+	Under General Tab Select "This project is parameterized"	 Select the type of the parameter you want. In  my case use "Choice parameter"
+	for eg: name= browser
+		Choices = chrome, edge, firefox, ie
+		description is optional
+	Click Save.
+	when you click on Build with Parameter buton you can see the parameter name browser and select the options from the dropdown such as chrome, firefox...
+	
+RUN AND VALIDATE THE JOB	
+
+============T- 20 How to RUN jenkins job from command line============ 
+1. First you need to download jenkins-cli.jar
+2.  Pasted in your same location where you places Jenkins.war file
+3. before do anything just change the jenkins settings:
+	3.1	Go to the manage jenkins ->  Click "Configure Global Security" select "Anyone can do anything" in Authorization section and save
+4. Open new command prompt go to the location where you "jenkins-cli.jar" place and run this command "java -jar jenkins-cli.jar -s http://localhost:9090/ -webSocket build Job_creation" . Job_creation is your job name which you want to execute
+5. you can check on the Jenkins site and see the latest build started
+6. User can see the job information in command prompt "include -f " in your run command : "java -jar jenkins-cli.jar -s http://localhost:9090/ -webSocket build Job_creation -f"
+
+Note: User can check the other options in help section of build command
+
+7. Only logged in user can access: Go to the manage jenkins ->  Click "Configure Global Security" select "Logged-in users can do anything -> Allow anonymous read access"
+8.  go to the command line: "java -jar jenkins-cli.jar -s http://localhost:9090/ -webSocket build Job_creation -f" --username=admin --password=admin
+	
+============T- 21 How to RUN parameter jenkins job from command line============ 
+REFER T-20 CHAPTER TO Run THE TEST USING COMMAND LINE
+1. Open new command prompt go to the location where you "jenkins-cli.jar" place and run this command: "java -jar jenkins-cli.jar -s http://localhost:9090/ -webSocket build Job_creation -s -v -p MESSAGE=HELLO
+
+============T- 22 How to create parameters with check box, radio button, dropdown============
+1.  Install "Extended Choice Parameter" from manage plugin section Jenkins 
+	OR
+ : https://plugins.jenkins.io/extended-choice-parameter/
+ 
+2.  Create a new job "Extended_Parameterized_job" free style.
+3. Under General Tab Select "This project is parameterized"	 now you can see new option "EXTENDED CHOICE PARAMETER" select it. After that you can see few more radio button such as  "Basic Parameter Types", " Multi-level Parameter Types", "JSON Parameter Type"
+4. Select "Basic Parameter Types"
+	Name: "Browser"
+	Parameter Type: "Check Boxes" 
+	Number of Visible Items: 4
+	Delimiter: ","
+	
+	Choose Source for Value:
+		value: chrome,firefox,safari,edge,ie,opera
+5. Go to the Build section
+	Execute windows Batch Command:  "echo %BROWSER%"		
+6. Click Save
+
+Now user can see the option on the respective job: "Extended_Parameterized_job"
+Click on Build with parameter button. you can see that
+	BROWSER:
+		.	chrome
+		.	edge
+		.	firefox
+		.	safari
+only 4 is visible and scroll down you can see other options
+7. Select any option and you can see the result in console log
+8. explore other options, if you want
+
+============T- 22 How to Trigger Job with Email | Poll Mailbox Trigger Plugin============
+NEED TO REVISIT THIS LINK: https://www.youtube.com/watch?v=DWlAQe57uz8&list=PLhW3qG5bs-L8T-0JT464rkIvnUz5q4CQC&index=5
+
+============T- 23 How to Pass Parameters to downstream Job============
+1. start jenkins
+2.  go to manage jenkins- >manage plugins->
+3. Install "Parameterized Trigger Plugin"
+4. create two jobs, in my case Parameterized_Job and Trigger_Job
+5. Go the post section of "Trigger_Job" and select "Trigger parameterized build on other projects". Enter the following information:
+	Projects to build: "Parameterized_Job"
+	Trigger when build is: "stable"
+6. Click Add parameter and select "predefined parameters"	
+	For eg:
+		Name=Automation "This value is for you job which you want to execute"
+7. Run the "Trigger_Job" and you can see Parameterized_Job is execute by "Trigger_Job"
+
+	
+
+	

@@ -1,0 +1,50 @@
+Started by user [8mha:////4F873CvHtVHcb59IjJFWZnBsEdneUb7q+gKqfLgWNuzZAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building on master in workspace E:\Jenkins\Jenkins_Home\workspace\Automated_Deployment_Test
+[Automated_Deployment_Test] $ cmd /c call C:\Users\ashusai\AppData\Local\Temp\jenkins3615556207107373306.bat
+
+E:\Jenkins\Jenkins_Home\workspace\Automated_Deployment_Test>cd E:\Jenkins\RobotProject 
+
+E:\Jenkins\RobotProject>robot Test1.robot 
+[ ERROR ] Error in file 'E:\Jenkins\RobotProject\Test1.robot': Non-existing setting 'import os'.
+==============================================================================
+Test1                                                                         
+==============================================================================
+Test 1 Parallel Execution                                             | PASS |
+------------------------------------------------------------------------------
+Test1                                                                 | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Output:  E:\Jenkins\RobotProject\output.xml
+Log:     E:\Jenkins\RobotProject\log.html
+Report:  E:\Jenkins\RobotProject\report.html
+
+E:\Jenkins\RobotProject>exit 0 
+[DeployPublisher][INFO] Attempting to deploy 1 war file(s)
+[DeployPublisher][INFO] Deploying E:\Jenkins\Jenkins_Home\workspace\Automated_Deployment_Test\sample.war to container Tomcat 8.x Remote with context sample.war
+ERROR: Build step failed with exception
+org.codehaus.cargo.container.ContainerException: The [cargo.remote.username] and [cargo.remote.password] properties are mandatory and need to be defined in your configuration.
+	at org.codehaus.cargo.container.tomcat.internal.AbstractTomcatManagerDeployer.createManager(AbstractTomcatManagerDeployer.java:311)
+	at org.codehaus.cargo.container.tomcat.internal.AbstractTomcatManagerDeployer.getTomcatManager(AbstractTomcatManagerDeployer.java:82)
+	at org.codehaus.cargo.container.tomcat.internal.AbstractTomcatManagerDeployer.redeploy(AbstractTomcatManagerDeployer.java:169)
+	at hudson.plugins.deploy.CargoContainerAdapter.deploy(CargoContainerAdapter.java:81)
+	at hudson.plugins.deploy.CargoContainerAdapter$DeployCallable.invoke(CargoContainerAdapter.java:167)
+	at hudson.plugins.deploy.CargoContainerAdapter$DeployCallable.invoke(CargoContainerAdapter.java:136)
+	at hudson.FilePath.act(FilePath.java:1075)
+	at hudson.FilePath.act(FilePath.java:1058)
+	at hudson.plugins.deploy.CargoContainerAdapter.redeployFile(CargoContainerAdapter.java:133)
+	at hudson.plugins.deploy.PasswordProtectedAdapterCargo.redeployFile(PasswordProtectedAdapterCargo.java:95)
+	at hudson.plugins.deploy.DeployPublisher.perform(DeployPublisher.java:113)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:78)
+	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:741)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:690)
+	at hudson.model.Build$BuildExecution.post2(Build.java:186)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:635)
+	at hudson.model.Run.execute(Run.java:1881)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:428)
+Build step 'Deploy war/ear to a container' marked build as failure
+Finished: FAILURE

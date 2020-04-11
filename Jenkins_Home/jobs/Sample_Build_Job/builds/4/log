@@ -1,0 +1,14 @@
+Started by user [8mha:////4F873CvHtVHcb59IjJFWZnBsEdneUb7q+gKqfLgWNuzZAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building on master in workspace E:\Jenkins\Jenkins_Home\workspace\Sample_Build_Job
+[Sample_Build_Job] $ cmd /c call C:\Users\ashusai\AppData\Local\Temp\jenkins152219182613829143.bat
+
+E:\Jenkins\Jenkins_Home\workspace\Sample_Build_Job>time /t 
+06:34 PM
+
+E:\Jenkins\Jenkins_Home\workspace\Sample_Build_Job>echo "Build job completed successfully." 
+"Build job completed successfully."
+
+E:\Jenkins\Jenkins_Home\workspace\Sample_Build_Job>exit 0 
+Triggering a new build of [8mha:////4P/ToJyAVgSJJoxhQi4eUlb3BCJUghtCl4c3DpmCI5y8AAAAoh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgZx/az8JP3gxNyCnNR4l9SCnPzKeC+gCAC0Hr2QzAAAAA==[0mSample_Deploy_Job
+Finished: SUCCESS

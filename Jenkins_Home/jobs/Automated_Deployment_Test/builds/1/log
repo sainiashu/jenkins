@@ -1,0 +1,37 @@
+Started by user [8mha:////4F873CvHtVHcb59IjJFWZnBsEdneUb7q+gKqfLgWNuzZAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Running as SYSTEM
+Building on master in workspace E:\Jenkins\Jenkins_Home\workspace\Automated_Deployment_Test
+[Automated_Deployment_Test] $ cmd /c call C:\Users\ashusai\AppData\Local\Temp\jenkins8720569476196753562.bat
+
+E:\Jenkins\Jenkins_Home\workspace\Automated_Deployment_Test>cd E:\Jenkins\RobotProject 
+
+E:\Jenkins\RobotProject>robot Test1.robot 
+[ ERROR ] Error in file 'E:\Jenkins\RobotProject\Test1.robot': Non-existing setting 'import os'.
+==============================================================================
+Test1                                                                         
+==============================================================================
+Test 1 Parallel Execution                                             | PASS |
+------------------------------------------------------------------------------
+Test1                                                                 | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Output:  E:\Jenkins\RobotProject\output.xml
+Log:     E:\Jenkins\RobotProject\log.html
+Report:  E:\Jenkins\RobotProject\report.html
+
+E:\Jenkins\RobotProject>exit 0 
+ERROR: Step ‘Deploy war/ear to a container’ aborted due to exception: 
+java.lang.InterruptedException: [DeployPublisher][WARN] No wars found. Deploy aborted. %n
+	at hudson.plugins.deploy.DeployPublisher.perform(DeployPublisher.java:107)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:78)
+	at hudson.tasks.BuildStepMonitor$3.perform(BuildStepMonitor.java:45)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:741)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:690)
+	at hudson.model.Build$BuildExecution.post2(Build.java:186)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:635)
+	at hudson.model.Run.execute(Run.java:1881)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:43)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:428)
+Finished: FAILURE

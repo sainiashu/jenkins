@@ -1,0 +1,13 @@
+Started by upstream project "[8mha:////4AvfkCvAiZCnlGgBjzsAodjjTjAamvMuRuntVByJdMaxAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6WflJ+l75SfHJRamJJZn5efoAUBeKDMcAAAA=[0mJob_creation" build number [8mha:////4KOW8JgNPE8HBZol+JHuiN2ynk2tbvvNdHicmrusX10OAAAAoB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAymEgYR/az8JH2v/KT45KLUxJLM/Dx9QwMA0Jo4DMkAAAA=[0m10
+originally caused by:
+ Started from command line by [8mha:////4Bjs25dd5DFSAaQEevMKDnwwoFo9blFkjQJYSoWhw0hnAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZ+/dLi1CL9xLz8vMrc/NJiAJjzDjjEAAAA[0manonymous
+Running as SYSTEM
+Building on master in workspace E:\Jenkins\Jenkins_Home\workspace\chain_exec_project1
+[chain_exec_project1] $ cmd /c call C:\Users\ashusai\AppData\Local\Temp\jenkins7245147244708516289.bat
+
+E:\Jenkins\Jenkins_Home\workspace\chain_exec_project1>pwd
+/e/Jenkins/Jenkins_Home/workspace/chain_exec_project1
+
+E:\Jenkins\Jenkins_Home\workspace\chain_exec_project1>exit 0 
+Triggering a new build of [8mha:////4PIc9lesCm1swO5FpkqdRBedaHeW5CiX9DqNfHfGO0lcAAAApR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzhEgZJ/az8JP3kjMTMvPjUitTk+IKi/KzU5BIjfQAA2oLwzgAAAA==[0mchain_exec_project2
+Finished: SUCCESS

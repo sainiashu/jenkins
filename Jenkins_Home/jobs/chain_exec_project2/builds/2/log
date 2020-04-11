@@ -1,0 +1,14 @@
+Started by upstream project "[8mha:////4FVO9WNXUrZSPWc5jAxrxTKkSBghoiWQb2XH6y/1hsZbAAAApR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzhEgZJ/az8JP3kjMTMvPjUitTk+IKi/KzU5BJDfQDDia/bzgAAAA==[0mchain_exec_project1" build number [8mha:////4IX17lXsGmS85WAkDvzZdf9d35F/HseB4nvvvSqq1umyAAAApR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBin9rPwk/eSMxMy8+NSK1OT4gqL8rNTkEkN9IwBfVdqjzwAAAA==[0m2
+originally caused by:
+ Started by upstream project "[8mha:////4AvfkCvAiZCnlGgBjzsAodjjTjAamvMuRuntVByJdMaxAAAAnR+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAweoBn6WflJ+l75SfHJRamJJZn5efoAUBeKDMcAAAA=[0mJob_creation" build number [8mha:////4Ph1OXb0jZaEp0fUuZekfdzKZA5JSFpMsqDiV9eMQNF6AAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLQIwSBmH9rPwkfa/8pPjkotTEksz8PH1LAEGPkRjIAAAA[0m9
+ originally caused by:
+  Started from command line by [8mha:////4Bjs25dd5DFSAaQEevMKDnwwoFo9blFkjQJYSoWhw0hnAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZ+/dLi1CL9xLz8vMrc/NJiAJjzDjjEAAAA[0manonymous
+Running as SYSTEM
+Building on master in workspace E:\Jenkins\Jenkins_Home\workspace\chain_exec_project2
+[chain_exec_project2] $ cmd /c call C:\Users\ashusai\AppData\Local\Temp\jenkins153851587715864998.bat
+
+E:\Jenkins\Jenkins_Home\workspace\chain_exec_project2>pwd
+/e/Jenkins/Jenkins_Home/workspace/chain_exec_project2
+
+E:\Jenkins\Jenkins_Home\workspace\chain_exec_project2>exit 0 
+Finished: SUCCESS

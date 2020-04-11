@@ -1,0 +1,137 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson>
+  <disabledAdministrativeMonitors/>
+  <version>2.222.1</version>
+  <installStateName>RUNNING</installStateName>
+  <numExecutors>2</numExecutors>
+  <mode>NORMAL</mode>
+  <useSecurity>true</useSecurity>
+  <authorizationStrategy class="hudson.security.AuthorizationStrategy$Unsecured"/>
+  <securityRealm class="hudson.security.HudsonPrivateSecurityRealm">
+    <disableSignup>true</disableSignup>
+    <enableCaptcha>false</enableCaptcha>
+  </securityRealm>
+  <disableRememberMe>false</disableRememberMe>
+  <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
+  <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULL_NAME}</workspaceDir>
+  <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
+  <systemMessage>&lt;h1&gt;This is an example of system message.&lt;/h1&gt;</systemMessage>
+  <markupFormatter class="hudson.markup.RawHtmlMarkupFormatter" plugin="antisamy-markup-formatter@2.0">
+    <disableSyntaxHighlighting>false</disableSyntaxHighlighting>
+  </markupFormatter>
+  <jdks/>
+  <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
+  <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
+  <clouds/>
+  <quietPeriod>5</quietPeriod>
+  <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
+  <views>
+    <hudson.model.AllView>
+      <owner class="hudson" reference="../../.."/>
+      <name>all</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+    </hudson.model.AllView>
+    <se.diabol.jenkins.pipeline.DeliveryPipelineView plugin="delivery-pipeline-plugin@1.4.2">
+      <owner class="hudson" reference="../../.."/>
+      <name>Test Delivery Pipeline</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <componentSpecs>
+        <se.diabol.jenkins.pipeline.DeliveryPipelineView_-ComponentSpec>
+          <name>Build Job</name>
+          <firstJob>Sample_Build_Job</firstJob>
+          <lastJob></lastJob>
+          <showUpstream>false</showUpstream>
+        </se.diabol.jenkins.pipeline.DeliveryPipelineView_-ComponentSpec>
+      </componentSpecs>
+      <noOfPipelines>3</noOfPipelines>
+      <showAggregatedPipeline>false</showAggregatedPipeline>
+      <noOfColumns>1</noOfColumns>
+      <sorting>none</sorting>
+      <showAvatars>false</showAvatars>
+      <updateInterval>2</updateInterval>
+      <showChanges>false</showChanges>
+      <allowManualTriggers>false</allowManualTriggers>
+      <showTotalBuildTime>false</showTotalBuildTime>
+      <allowRebuild>true</allowRebuild>
+      <allowPipelineStart>true</allowPipelineStart>
+      <allowAbort>false</allowAbort>
+      <showDescription>false</showDescription>
+      <showPromotions>false</showPromotions>
+      <showTestResults>false</showTestResults>
+      <showStaticAnalysisResults>false</showStaticAnalysisResults>
+      <linkRelative>false</linkRelative>
+      <pagingEnabled>false</pagingEnabled>
+      <showAbsoluteDateTime>false</showAbsoluteDateTime>
+      <showAggregatedChanges>false</showAggregatedChanges>
+      <aggregatedChangesGroupingPattern></aggregatedChangesGroupingPattern>
+      <maxNumberOfVisiblePipelines>-1</maxNumberOfVisiblePipelines>
+      <regexpFirstJobs/>
+      <linkToConsoleLog>false</linkToConsoleLog>
+      <description></description>
+    </se.diabol.jenkins.pipeline.DeliveryPipelineView>
+    <au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView plugin="build-pipeline-plugin@1.5.8">
+      <owner class="hudson" reference="../../.."/>
+      <name>Build_Pipeline_Test</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <gridBuilder class="au.com.centrumsystems.hudson.plugin.buildpipeline.DownstreamProjectGridBuilder">
+        <firstJob>Sample_Build_Job</firstJob>
+        <firstJobLink>job/Sample_Build_Job/</firstJobLink>
+      </gridBuilder>
+      <noOfDisplayedBuilds>5</noOfDisplayedBuilds>
+      <buildViewTitle></buildViewTitle>
+      <consoleOutputLinkStyle>Lightbox</consoleOutputLinkStyle>
+      <cssUrl></cssUrl>
+      <triggerOnlyLatestJob>false</triggerOnlyLatestJob>
+      <alwaysAllowManualTrigger>false</alwaysAllowManualTrigger>
+      <showPipelineParameters>false</showPipelineParameters>
+      <rowHeaders class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.SimpleRowHeader"/>
+      <showPipelineParametersInHeaders>false</showPipelineParametersInHeaders>
+      <columnHeaders class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.NullColumnHeader"/>
+      <buildCard class="au.com.centrumsystems.hudson.plugin.buildpipeline.extension.StandardBuildCard"/>
+      <startsWithParameters>false</startsWithParameters>
+      <refreshFrequency>3</refreshFrequency>
+      <showPipelineDefinitionHeader>false</showPipelineDefinitionHeader>
+    </au.com.centrumsystems.hudson.plugin.buildpipeline.BuildPipelineView>
+    <com.smartcodeltd.jenkinsci.plugins.buildmonitor.BuildMonitorView plugin="build-monitor-plugin@1.12+build.201809061734">
+      <owner class="hudson" reference="../../.."/>
+      <name>Build_Monitor_1</name>
+      <filterExecutors>false</filterExecutors>
+      <filterQueue>false</filterQueue>
+      <properties class="hudson.model.View$PropertyList"/>
+      <jobNames>
+        <comparator class="hudson.util.CaseInsensitiveComparator"/>
+        <string>Automated_Deployment_Test</string>
+        <string>chain_exec_project1</string>
+        <string>chain_exec_project2</string>
+        <string>Robot_Test1</string>
+        <string>Sample_Build_Job</string>
+        <string>Sample_Deploy_Job</string>
+        <string>Sample_Test_Job</string>
+        <string>tomcat_jenkins</string>
+      </jobNames>
+      <jobFilters/>
+      <columns/>
+      <recurse>false</recurse>
+      <title>Build_Monitor_1</title>
+      <config>
+        <displayCommitters>false</displayCommitters>
+        <buildFailureAnalyzerDisplayedField>Name</buildFailureAnalyzerDisplayedField>
+        <order class="com.smartcodeltd.jenkinsci.plugins.buildmonitor.order.ByStatus"/>
+      </config>
+    </com.smartcodeltd.jenkinsci.plugins.buildmonitor.BuildMonitorView>
+  </views>
+  <primaryView>all</primaryView>
+  <slaveAgentPort>-1</slaveAgentPort>
+  <label></label>
+  <crumbIssuer class="hudson.security.csrf.DefaultCrumbIssuer">
+    <excludeClientIPFromCrumb>false</excludeClientIPFromCrumb>
+  </crumbIssuer>
+  <nodeProperties/>
+  <globalNodeProperties/>
+</hudson>

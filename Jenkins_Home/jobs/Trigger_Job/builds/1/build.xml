@@ -1,0 +1,200 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <com.cloudbees.jenkins.plugins.bitbucket.FirstCheckoutCompletedInvisibleAction plugin="cloudbees-bitbucket-branch-source@2.7.0"/>
+    <hudson.plugins.parameterizedtrigger.CapturedEnvironmentAction plugin="parameterized-trigger@2.36">
+      <env serialization="custom">
+        <unserializable-parents/>
+        <tree-map>
+          <default>
+            <comparator class="hudson.util.CaseInsensitiveComparator"/>
+          </default>
+          <int>78</int>
+          <string>=C:</string>
+          <string>C:\Windows\System32</string>
+          <string>=E:</string>
+          <string>E:\Jenkins</string>
+          <string>ALLUSERSPROFILE</string>
+          <string>C:\ProgramData</string>
+          <string>APPDATA</string>
+          <string>C:\Users\ashusai\AppData\Roaming</string>
+          <string>BUILD_DISPLAY_NAME</string>
+          <string>#1</string>
+          <string>BUILD_ID</string>
+          <string>1</string>
+          <string>BUILD_NUMBER</string>
+          <string>1</string>
+          <string>BUILD_TAG</string>
+          <string>jenkins-Trigger_Job-1</string>
+          <string>BUILD_URL</string>
+          <string>http://localhost:8080/job/Trigger_Job/1/</string>
+          <string>ChocolateyInstall</string>
+          <string>C:\ProgramData\chocolatey</string>
+          <string>ChocolateyLastPathUpdate</string>
+          <string>132257997480889672</string>
+          <string>CLASSPATH</string>
+          <string></string>
+          <string>CommonProgramFiles</string>
+          <string>C:\Program Files (x86)\Common Files</string>
+          <string>CommonProgramFiles(x86)</string>
+          <string>C:\Program Files (x86)\Common Files</string>
+          <string>CommonProgramW6432</string>
+          <string>C:\Program Files\Common Files</string>
+          <string>COMPUTERNAME</string>
+          <string>5TMR542</string>
+          <string>ComSpec</string>
+          <string>C:\Windows\system32\cmd.exe</string>
+          <string>EXECUTOR_NUMBER</string>
+          <string>0</string>
+          <string>HOMEDRIVE</string>
+          <string>C:</string>
+          <string>HOMEPATH</string>
+          <string>\Users\ashusai</string>
+          <string>HUDSON_HOME</string>
+          <string>E:\Jenkins\Jenkins_Home</string>
+          <string>HUDSON_SERVER_COOKIE</string>
+          <string>fbfd750d78b33506</string>
+          <string>HUDSON_URL</string>
+          <string>http://localhost:8080/</string>
+          <string>JAVA_HOME</string>
+          <string>C:\Program Files (x86)\Java\jre1.8.0_231</string>
+          <string>JENKINS_HOME</string>
+          <string>E:\Jenkins\Jenkins_Home</string>
+          <string>JENKINS_SERVER_COOKIE</string>
+          <string>fbfd750d78b33506</string>
+          <string>JENKINS_URL</string>
+          <string>http://localhost:8080/</string>
+          <string>JOB_BASE_NAME</string>
+          <string>Trigger_Job</string>
+          <string>JOB_DISPLAY_URL</string>
+          <string>http://localhost:8080/job/Trigger_Job/display/redirect</string>
+          <string>JOB_NAME</string>
+          <string>Trigger_Job</string>
+          <string>JOB_URL</string>
+          <string>http://localhost:8080/job/Trigger_Job/</string>
+          <string>LOCALAPPDATA</string>
+          <string>C:\Users\ashusai\AppData\Local</string>
+          <string>LOGONSERVER</string>
+          <string>\\BWFJ-DC</string>
+          <string>NODE_LABELS</string>
+          <string>master</string>
+          <string>NODE_NAME</string>
+          <string>master</string>
+          <string>NUMBER_OF_PROCESSORS</string>
+          <string>4</string>
+          <string>NVM_HOME</string>
+          <string>C:\nvm</string>
+          <string>NVM_SYMLINK</string>
+          <string>C:\Program Files\nodejs</string>
+          <string>OneDrive</string>
+          <string>C:\Users\ashusai\OneDrive</string>
+          <string>OpsPortal</string>
+          <string>nocheck</string>
+          <string>ORACLE_HOME</string>
+          <string>C:\Oracle\instantclient_12_1</string>
+          <string>OS</string>
+          <string>Windows_NT</string>
+          <string>Path</string>
+          <string>C:\Oracle\instantclient_12_1;C:\Oracle\instantclient_12_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\nvm;C:\Program Files\nodejs;C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin;C:\Oracle\sqldeveloper;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\CCM;C:\Users\ashusai\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\MSBuild\14.0\Bin;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\nvm;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\PuTTY\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\Git\usr\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\GitExtensions\;C:\Users\ashusai\AppData\Local\Programs\Python\Python37;C:\Users\ashusai\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\ashusai\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\IronPython 2.7;C:\Program Files (x86)\IronPython 2.7\Scripts;C:\Users\ashusai\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\ashusai\.dotnet\tools;C:\Program Files\JetBrains\PyCharmCommunityEdition\bin;C:\Program Files\kdiff3</string>
+          <string>PATHEXT</string>
+          <string>.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC</string>
+          <string>PROCESSOR_ARCHITECTURE</string>
+          <string>x86</string>
+          <string>PROCESSOR_ARCHITEW6432</string>
+          <string>AMD64</string>
+          <string>PROCESSOR_IDENTIFIER</string>
+          <string>Intel64 Family 6 Model 63 Stepping 2, GenuineIntel</string>
+          <string>PROCESSOR_LEVEL</string>
+          <string>6</string>
+          <string>PROCESSOR_REVISION</string>
+          <string>3f02</string>
+          <string>ProgramData</string>
+          <string>C:\ProgramData</string>
+          <string>ProgramFiles</string>
+          <string>C:\Program Files (x86)</string>
+          <string>ProgramFiles(x86)</string>
+          <string>C:\Program Files (x86)</string>
+          <string>ProgramW6432</string>
+          <string>C:\Program Files</string>
+          <string>PROMPT</string>
+          <string>$P$G</string>
+          <string>PSModulePath</string>
+          <string>C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\PowerShell\Modules\;</string>
+          <string>PUBLIC</string>
+          <string>C:\Users\Public</string>
+          <string>PyCharm Community Edition</string>
+          <string>C:\Program Files\JetBrains\PyCharmCommunityEdition\bin;</string>
+          <string>RUN_CHANGES_DISPLAY_URL</string>
+          <string>http://localhost:8080/job/Trigger_Job/1/display/redirect?page=changes</string>
+          <string>RUN_DISPLAY_URL</string>
+          <string>http://localhost:8080/job/Trigger_Job/1/display/redirect</string>
+          <string>snow_agent</string>
+          <string>C:\Program Files\Snow Software\Inventory\Agent</string>
+          <string>SystemDrive</string>
+          <string>C:</string>
+          <string>SystemRoot</string>
+          <string>C:\Windows</string>
+          <string>TA_CHROME_OPTION_STR_BinaryLocation</string>
+          <string>C:\Program Files (x86)\Chromium\Application\chrome.exe</string>
+          <string>TEM</string>
+          <string>E:\TEM\tem\Legacy\</string>
+          <string>TEMP</string>
+          <string>C:\Users\ashusai\AppData\Local\Temp</string>
+          <string>TF&amp;MSTEST</string>
+          <string>C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE</string>
+          <string>TMP</string>
+          <string>C:\Users\ashusai\AppData\Local\Temp</string>
+          <string>TNS_ADMIN</string>
+          <string>C:\Oracle\instantclient_12_1\network\admin</string>
+          <string>UATDATA</string>
+          <string>C:\Windows\CCM\UATData\D9F8C395-CAB8-491d-B8AC-179A1FE1BE77</string>
+          <string>USERDNSDOMAIN</string>
+          <string>BASWARE.COM</string>
+          <string>USERDOMAIN</string>
+          <string>BASWARE</string>
+          <string>USERDOMAIN_ROAMINGPROFILE</string>
+          <string>BASWARE</string>
+          <string>USERNAME</string>
+          <string>ashusai</string>
+          <string>USERPROFILE</string>
+          <string>C:\Users\ashusai</string>
+          <string>VS140COMNTOOLS</string>
+          <string>C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\</string>
+          <string>windir</string>
+          <string>C:\Windows</string>
+          <string>WORKSPACE</string>
+          <string>E:\Jenkins\Jenkins_Home\workspace\Trigger_Job</string>
+          <string>WORKSPACE_TMP</string>
+          <string>E:\Jenkins\Jenkins_Home\workspace\Trigger_Job@tmp</string>
+        </tree-map>
+        <hudson.EnvVars>
+          <default>
+            <platform>WINDOWS</platform>
+          </default>
+        </hudson.EnvVars>
+      </env>
+    </hudson.plugins.parameterizedtrigger.CapturedEnvironmentAction>
+  </actions>
+  <queueId>39</queueId>
+  <timestamp>1586507490217</timestamp>
+  <startTime>1586507490301</startTime>
+  <result>SUCCESS</result>
+  <duration>756</duration>
+  <charset>windows-1252</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>E:\Jenkins\Jenkins_Home\workspace\Trigger_Job</workspace>
+  <hudsonVersion>2.222.1</hudsonVersion>
+  <scm class="hudson.scm.NullChangeLogParser"/>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>
