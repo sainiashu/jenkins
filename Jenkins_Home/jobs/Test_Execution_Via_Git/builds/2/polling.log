@@ -1,0 +1,9 @@
+Started on Apr 19, 2020 2:05:00 PM
+Using strategy: Default
+No credentials specified
+ > git.exe --version # timeout=10
+ > git.exe ls-remote -h -- https://github.com/sainiashu/git.git # timeout=10
+Found 1 remote heads on https://github.com/sainiashu/git.git
+[poll] Latest remote head revision on refs/heads/master is: e823398f19b2eee8bfd2be7c3ed297e1854b8f0e
+Done. Took 2.3 sec
+Changes found

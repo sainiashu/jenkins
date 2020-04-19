@@ -1,0 +1,43 @@
+Started by an SCM change
+Running as SYSTEM
+Building on master in workspace E:\Jenkins\Jenkins_Home\workspace\Test_Execution_Via_Git
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/sainiashu/git.git
+ > git.exe init E:\Jenkins\Jenkins_Home\workspace\Test_Execution_Via_Git # timeout=10
+Fetching upstream changes from https://github.com/sainiashu/git.git
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress -- https://github.com/sainiashu/git.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/sainiashu/git.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://github.com/sainiashu/git.git # timeout=10
+Fetching upstream changes from https://github.com/sainiashu/git.git
+ > git.exe fetch --tags --progress -- https://github.com/sainiashu/git.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision e823398f19b2eee8bfd2be7c3ed297e1854b8f0e (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f e823398f19b2eee8bfd2be7c3ed297e1854b8f0e # timeout=10
+Commit message: "added git merge and rebase section"
+First time build. Skipping changelog.
+[Test_Execution_Via_Git] $ cmd /c call C:\Users\ashusai\AppData\Local\Temp\jenkins4168242709746587977.bat
+
+E:\Jenkins\Jenkins_Home\workspace\Test_Execution_Via_Git>cd E:\Jenkins\RobotProject 
+
+E:\Jenkins\RobotProject>robot Test1.robot 
+[ ERROR ] Error in file 'E:\Jenkins\RobotProject\Test1.robot': Non-existing setting 'import os'.
+==============================================================================
+Test1                                                                         
+==============================================================================
+Test 1 Parallel Execution                                             | PASS |
+------------------------------------------------------------------------------
+Test1                                                                 | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Output:  E:\Jenkins\RobotProject\output.xml
+Log:     E:\Jenkins\RobotProject\log.html
+Report:  E:\Jenkins\RobotProject\report.html
+
+E:\Jenkins\RobotProject>exit 0 
+Finished: SUCCESS
